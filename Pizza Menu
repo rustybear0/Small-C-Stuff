@@ -1,0 +1,34 @@
+namespace Project
+{
+    class Program
+    {
+      static void Main(string[] args)
+      {
+        for(int i = 1; i <= 2; i++)
+        {
+            if(i == 1)
+            {
+              Console.WriteLine("What pizza would you like");  
+            }
+            else
+            {
+              Console.WriteLine("Okay, anything else?");  
+            }  
+            string order = Console.ReadLine();
+            
+            switch(order)
+            {
+                case "Cheese":
+                    Console.WriteLine("That will be $10");
+                    break;
+                case "Pepperoni":
+                    Console.WriteLine("That will be $15");
+                    break;
+                case "Buffalo Chicken":
+                    Console.WriteLine("That will be $50");
+                    break;
+            }
+        }
+      }
+    }
+}
